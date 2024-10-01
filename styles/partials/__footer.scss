@@ -1,0 +1,17 @@
+.footer {
+  padding: 30px;
+  background-color: #4161a2;
+
+  .nav-right {
+    .links {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      font-size: 25px;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
