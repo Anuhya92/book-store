@@ -1,6 +1,6 @@
 .footer {
   padding: 30px;
-  background-color: #4161a2;
+  background-color: #8fb6bb;
 
   .nav-right {
     .links {
@@ -8,6 +8,14 @@
       justify-content: flex-end;
       gap: 15px;
       font-size: 25px;
+
+      .fa-instagram {
+        color: red;
+      }
+
+      .fa-whatsapp {
+        color: green;
+      }
     }
   }
 
