@@ -169,6 +169,7 @@ body {
 
     .navmenu .links {
         flex-direction: column;
+        gap:15px;
     
     }
 
