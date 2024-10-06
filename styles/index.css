@@ -1,0 +1,157 @@
+h1 {
+    font-size: 40px;
+    color: rgb(78, 107, 49);
+    justify-content: center;
+    display: flex;
+}
+
+.logo {
+    margin-left: 5%;
+}
+
+.navbar {
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+}
+
+body {
+    background-image: url("/images/nedladdning.jpg");
+    background-size: cover;
+
+}
+
+.navbar .navmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .links {
+
+    display: flex;
+
+}
+
+
+.navmenu .links li a {
+    color: #ffffff;
+    margin-right: 20px;
+    padding: 0px 10px;
+    font-size: 18px;
+    text-decoration: none !important;
+
+}
+
+.navbar .navmenu .links li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about-us-section {
+    padding: 30px;
+
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.about-us-text {
+    width: 60%;
+    text-align: justify;
+    font-size: 25px;
+
+}
+
+.about-us-text h2 {
+    text-align: center;
+    color: limegreen;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.about-us-image {
+    width: 35%;
+    text-align: right;
+    width: 100%;
+    border-radius: 10px;
+    margin-right: 20%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: gray;
+    position: relative;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.logo2 {
+    margin-left: 5%;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-right .links {
+    display: flex;
+    gap: 15px;
+
+}
+
+.nav-right .links li {
+    list-style: none;
+}
+
+.nav-right .links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fa-brands {
+    font-size: 30px !important;
+}
+
+.media {
+    margin-left: 15px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+.fa-instagram {
+    color: red;
+  }
+
+  .fa-whatsapp {
+    color: green;
+  }
+  .fa-twitter{
+    color:rgb(8, 8, 82);
+  }
+  .fa-facebook{
+    color:rgb(8, 8, 82);
+  }
