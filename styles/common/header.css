@@ -14,11 +14,6 @@
       display: flex;
 
       li {
-        a:active {
-          color: rgb(210, 203, 189);
-          text-decoration: underline;
-          font-style: italic;
-        }
         a {
           color: #ffffff;
           margin-right: 20px;
@@ -29,6 +24,12 @@
           &:hover {
             text-decoration: underline;
             cursor: pointer;
+          }
+
+          &.active {
+            color: rgb(199, 69, 14);
+            text-decoration: underline;
+            font-style: italic;
           }
         }
       }

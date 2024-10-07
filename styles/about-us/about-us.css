@@ -1,0 +1,182 @@
+.logo {
+  margin-left: 5%;
+}
+
+.navbar {
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #64d810;
+}
+
+body {
+  background-image: url("/images/nedladdning.jpg");
+  background-size: cover;
+}
+
+.navbar .navmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  list-style-type: none;
+}
+
+.navmenu .links li a {
+  color: #ffffff;
+  margin-right: 20px;
+  padding: 0px 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar .navmenu .links li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.navbar .navmenu .links li a.active {
+  color: rgb(199, 69, 14);
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.about-us-section {
+  padding: 30px;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.about-us-text {
+  width: 20%;
+  text-align: justify;
+  font-size: 25px;
+}
+
+.about-us-text h2 {
+  text-align: center;
+  color: #64d810;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.about-us-image {
+  width: 35%;
+  text-align: right;
+
+  border-radius: 10px;
+  margin-right: 20%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #64d810;
+  position: relative;
+}
+
+.nav-left {
+  flex: 1;
+}
+
+.logo2 {
+  margin-left: 5%;
+}
+
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-right .links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right .links li {
+  list-style: none;
+}
+
+.nav-right .links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fa-brands {
+  font-size: 30px !important;
+}
+
+.media {
+  margin-left: 15px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
+.fa-instagram {
+  color: red;
+}
+
+.fa-whatsapp {
+  color: #64d810;
+}
+.fa-twitter {
+  color: rgb(8, 8, 82);
+}
+.fa-facebook {
+  color: rgb(8, 8, 82);
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .hamburger {
+    display: block;
+  }
+
+  .navbar .navmenu {
+    display: none;
+  }
+
+  .navmenu .links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar .navmenu.active {
+    display: block;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+  }
+  .about-us-text {
+    width: 100%;
+  }
+  .about-us-image {
+    width: 100%;
+  }
+}
