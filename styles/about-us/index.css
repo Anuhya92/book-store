@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
+    background-color: #64d810;
 }
 
 body {
@@ -73,7 +73,7 @@ body {
 
 .about-us-text h2 {
     text-align: center;
-    color: limegreen;
+    color: #64d810;
     margin-bottom: 20px;
     font-size: 50px;
     font-weight: bold;
@@ -94,7 +94,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color: green;
+    background-color: #64d810;
     position: relative;
 }
 
@@ -148,7 +148,7 @@ body {
   }
 
   .fa-whatsapp {
-    color: green;
+    color: #64d810;
   }
   .fa-twitter{
     color:rgb(8, 8, 82);
