@@ -1,78 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="../styles/contactus/conctact-us.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/common/reset.css" />
+    <link rel="stylesheet" href="../styles/common/header.css" />
+    <link rel="stylesheet" href="../styles/common/footer.css" />
+    <link rel="stylesheet" href="../styles/contactus/conctact-us.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/20b9975a2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img width="60" height="60" src="../images/logo.png" alt="BookStore" />
+      </div>
+      <div class="navmenu">
+        <ul class="links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about-us.html">About us</a></li>
+          <li><a href="./book-gallery.html">Gallery</a></li>
+          <li><a href="./contact-us.html">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <main>
-        <h1>Contact Us</h1>
+      <h1>Contact Us</h1>
 
-        <form>
-            <div>  
-               <label for="title">Title:</label>
+      <form>
+        <div class="field">  
+          <label for="title">Title:</label>
+          <label for="Mr">Mr.</label>  
+          <input type="radio" id="Mr" name="title" value="Mr" />
+          <label for="Mrs">Mrs.</label>  
+          <input type="radio" id="Mrs" name="title" value="Mrs" />
+          <label for="Ms">Ms.</label>  
+          <input type="radio" id="Ms" name="title" value="Ms" />
+        </div>
 
-               <label for="Mr">Mr.</label>  
-               <input type="radio" id="Mr" name="title" value="Mr">
-                                               
-               <label for="Mrs">Mrs.</label> 
-               <input type="radio" id="Mrs" name="title" value="Mrs">
-               
-               <label for="Ms">Ms.</label>  
-               <input type="radio" id="Ms" name="title" value="Ms"> 
-            </div>
+        <div class="field">   
+          <label for="fname">First name:</label>
+          <input type="text" name="fname" id="fname" placeholder="Ebbe" required />
+        </div>
 
-            <br>
+        <div class="field">    
+          <label for="lname">Last name:</label>
+          <input type="text" name="lname" id="lname" placeholder="Gunnarsson" required />
+        </div>
 
-            <div class="field">   
-                <label for="fname">First name:</label>
-                <input type="text" name="fname" id="fname" placeholder="Ebbe" required>
-            </div>
+        <div class="field">    
+          <label for="email">E-mail address:</label>
+          <input type="email" name="email" id="email" required />
+        </div>
 
-            <br>
+        <div class="field">  
+          <label for="services">Services:</label>
+          <select id="services" name="services">
+            <option value="membership">Membership</option>
+            <option value="payment">Payment</option>
+            <option value="book selection">Book Selection</option>
+          </select>
+        </div>  
 
-            <div class="field">    
-                <label for="lname">Last name:</label>
-                <input type="text" name="lname" id="lname" placeholder="Gunnarsson" required>
-            </div>
+        <h3>How can we help you?</h3>
+        <textarea rows="5" placeholder="Your message here..." name="help"></textarea>
 
-            <br>
+        <button type="submit">Submit</button>
 
-            <div class="field">    
-                <label for="email">E-mail address:</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-
-            <br>
-
-            <div class="field">  
-                <label for="services">Services:</label>
-                <select id="services" name="services">
-                    <option value="membership">Membership</option>
-                    <option value="payment">Payment</option>
-                    <option value="book selection">Book Selection</option>
-                </select>
-            </div>  
-
-            <br>
-
-            <h3>How can we help you?</h3>
-            <textarea rows="5" placeholder="Your message here..." name="help"></textarea>
-
-            <br>
-
-            <button type="submit">Submit</button>
-
-            <p>
-                ABC Bookstore needs the contact information you provide to us to contact you
-                about our products and services. You can unsubscribe from these communications
-                whenever you like. For information on how to unsubscribe and our privacy practices,
-                please review our Privacy Policy.
-            </p>
-       </form>
-            
+        <p class="info">
+          ABC Bookstore needs the contact information you provide to us to contact you
+          about our products and services. You can unsubscribe from these communications
+          whenever you like. For information on how to unsubscribe and our privacy practices,
+          please review our Privacy Policy.
+        </p>
+      </form>
     </main>
-</body>
+
+    <footer class="footer">
+      <div class="nav-left">
+        <div class="logo">
+          <img
+            width="60"
+            height="60"
+            src="../images/logo.png"
+            alt="BookStore"
+          />
+        </div>
+      </div>
+      <div class="nav-right">
+        <ul class="links">
+          <li title="facebook">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li title="twitter">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li title="instagram">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li title="whatsapp">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">BookStore &copy; 2024</p>
+    </footer>
+  </body>
 </html>
