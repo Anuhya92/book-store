@@ -7,13 +7,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #64d810;
+  background-color:#64d810;
 }
+ p {
+font-family: 'inter';
+font-size:22px;
+line-height: 25px;
+}
+  
 
-body {
-  background-image: url("/images/nedladdning.jpg");
-  background-size: cover;
-}
 
 .navbar .navmenu {
   display: flex;
@@ -70,11 +72,11 @@ body {
 
 .about-us-text h2 {
   text-align: center;
-  color: #64d810;
+  color: black;
   margin-bottom: 20px;
   font-size: 50px;
   font-weight: bold;
-  font-style: italic;
+ 
 }
 
 .about-us-image {
@@ -123,7 +125,7 @@ body {
 }
 
 .fa-brands {
-  font-size: 30px !important;
+  font-size: 25px !important;
 }
 
 .media {
@@ -143,7 +145,7 @@ body {
 }
 
 .fa-whatsapp {
-  color:brown;
+  color:green;
 }
 .fa-twitter {
   color: rgb(8, 8, 82);
@@ -152,31 +154,3 @@ body {
   color: rgb(8, 8, 82);
 }
 
-@media screen and (max-width: 600px) {
-  .navbar .hamburger {
-    display: block;
-  }
-
-  .navbar .navmenu {
-    display: none;
-  }
-
-  .navmenu .links {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .navbar .navmenu.active {
-    display: block;
-  }
-
-  .about-us-content {
-    flex-direction: column;
-  }
-  .about-us-text {
-    width: 100%;
-  }
-  .about-us-image {
-    width: 100%;
-  }
-}
