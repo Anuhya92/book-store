@@ -4,37 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/common/reset.css" />
+    <link rel="stylesheet" href="../styles/common/header.css" />
+    <link rel="stylesheet" href="../styles/common/footer.css" />
     <link rel="stylesheet" href="../styles/about-us/about-us.css" />
     <script
-    src="https://kit.fontawesome.com/20b9975a2f.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/20b9975a2f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>About us</title>
   </head>
 
   <body>
-    <header>
-      <!--Navbar starts-->
-      <nav class="navbar">
-        <div class="logo">
-          <img
-            width="60"
-            height="60"
-            src="../images/logo.png"
-            alt="BookStore"
-          />
-        </div>
-        <div class="navmenu" id="navmenu">
-          <ul class="links" id="links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a class="active" href="./about-us.html">About us</a></li>
-            <li><a href="./book-gallery.html">Gallery</a></li>
-            <li><a href="./contact-us.html">Contact us</a></li>
-          </ul>
-        </div>
-        <div class="hamburger" id="hamburger">&#9776;</div>
-      </nav>
-    </header>
+    <nav class="navbar">
+      <div class="logo">
+        <img width="60" height="60" src="../images/logo.png" alt="BookStore" />
+      </div>
+      <div class="navmenu">
+        <ul class="links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a class="active" href="./about-us.html">About us</a></li>
+          <li><a href="./book-gallery.html">Gallery</a></li>
+          <li><a href="./contact-us.html">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
     <main>
       <section>
         <div class="about-us-section">
@@ -71,72 +64,36 @@
           </div>
         </div>
       </section>
-      <div class="footer">
-        <div class="nav-left">
-          <div class="logo2">
-            <img
-              width="60"
-              height="60"
-              src="../images/logo.png"
-              alt="BookStore"
-            />
-          </div>
-        </div>
-
-        <div class="nav-right">
-          <ul class="links">
-            <li>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-
-            
-          
-
-            <li>
-                <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </a>
-              </li>
-
-
-
-
-          </ul>
-        </div>
-        <p class="copyright">BookStore &copy; 2024</p>
-      </div>
     </main>
-
-    <script>
-      const hamburger = document.getElementById("hamburger");
-      const navmenu = document.getElementById("navmenu");
-      hamburger.addEventListener("click", () => {
-        navmenu.classList.toggle("active");
-      });
-    </script>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="nav-left">
+        <div class="logo">
+          <img
+            width="60"
+            height="60"
+            src="../images/logo.png"
+            alt="BookStore"
+          />
+        </div>
+      </div>
+      <div class="nav-right">
+        <ul class="links">
+          <li title="facebook">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li title="twitter">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li title="instagram">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li title="whatsapp">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">BookStore &copy; 2024</p>
+    </footer>
   </body>
 </html>
